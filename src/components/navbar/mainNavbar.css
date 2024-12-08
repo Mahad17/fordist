@@ -1,0 +1,119 @@
+#mainNavbar {
+	position: relative; /* Default state */
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	top: 0;
+	z-index: 4;
+	background: rgba(255, 254, 254, 0.836);
+	transition: position 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+#mainNavbar.sticky {
+	position: fixed; /* Becomes fixed after scrolling */
+	background: rgb(255, 254, 254);
+}
+
+#mainNavbarContainer{
+	max-width: 93%;
+}
+
+.active {
+	text-decoration: none;
+	color: black;
+}
+.notActive {
+	text-decoration: none;
+	color: #292929a6;
+}
+
+/* -------------------- */
+
+.servicesBigDropdown {
+	display: flex;
+	margin-top: -0.1rem;
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+	transition: all 0.5s ease !important;
+}
+
+.dropdown-menu {
+	background: rgba(255, 254, 254, 0.952) !important;
+	margin-top: 1rem !important;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+	border: none !important;
+}
+.dropdown-menu .dropdown-item a:hover {
+	background: transparent !important;
+	color: #0072CE !important;
+}
+.dropdown-menu .dropdown-item a:active {
+	background: transparent !important;
+}
+
+@media only screen and (max-width: 991px) {
+	.dropdown-menu {
+		background: rgba(255, 254, 254, 0.952) !important;
+		margin-top: 0px !important;
+		border: 0.5px solid gray!important;
+	}
+	#mainNavbarContainer{
+		max-width: 97%;
+	}
+}
+
+.dropdown-toggle::after{
+	/* color: lightblue !important; */
+	display: none !important;
+}
+
+.arrow-up{
+	transform: rotate(180deg);
+}
+.arrow-up2{
+	transform: rotate(180deg);
+}
+
+#servicesBigDropdownTwo {
+	justify-content: center;
+}
+#servicesBigDropdownTwo div {
+	width: max-content;
+	transition: all 0.5s ease !important;
+	background: rgba(255, 254, 254, 0.952);
+}
+#servicesBigDropdownTwo div a {
+	font-weight: 600;
+}
+#servicesBigDropdownTwo div .active:hover {
+	color: #0072CE !important;
+}
+#servicesBigDropdownTwo div .notActive:hover {
+	color: #0072CE !important;
+}
+
+#servicesBigDropdownTwo.sticky {
+	position: fixed; /* Becomes fixed after scrolling */
+	transition: all 0.5s ease !important;
+	padding: 1rem 0 1rem 0;
+}
+/* -------------------- */
+
+@media only screen and (max-width: 991px) {
+	#mainNavbar {
+		position: relative;
+	}
+	#mainNavbar.sticky {
+		position: fixed;
+	}
+
+	/* -------------------- */
+
+	.servicesBigDropdown {
+		display: none;
+	}
+
+	/* -------------------- */
+}

@@ -1,0 +1,17 @@
+.navbarOne {
+	background: #0071ced2;
+	position: absolute;
+	z-index: 3;
+	display: block;
+}
+
+.icons {
+	color: #ED8B00;
+	font-size: large;
+}
+
+@media only screen and (max-width: 992px) {
+	#navbarOne {
+		display: none;
+	}
+}

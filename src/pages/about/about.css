@@ -1,0 +1,43 @@
+.aboutSection .row {
+	display: flex;
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+.aboutImageCont {
+	width: 430px;
+	height: 340px;
+	display: flex;
+}
+
+.aboutImageCont img {
+	object-fit: cover;
+	border-radius: 10px;
+	width: inherit;
+}
+
+.aboutSection .row .col p {
+	width: 80%;
+}
+
+@media only screen and (max-width: 992px) {
+	.aboutSection .row {
+		flex-direction: column-reverse;
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
+	.aboutSection .row .col p {
+		font-size: medium;
+		width: 100%;
+	}
+
+	.aboutSection .row .col h2 {
+		padding-top: 1rem;
+	}
+
+	.aboutImageCont {
+		width: 395px;
+		height: 280px;
+	}
+}

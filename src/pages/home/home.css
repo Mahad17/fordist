@@ -1,0 +1,62 @@
+.homeSectionOne {
+    position: relative;
+    margin-top: -9rem;
+	/* top: 0; */
+	z-index: 1;
+	box-sizing: border-box;
+	height: max-content;
+	width: 100%;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+	position: relative;
+	color: #f1f1f1;
+    margin-top: -5rem;
+	width: 100%;
+	padding: 1rem;
+}
+
+.content p{
+	font-size: x-large;
+    background: #0072CE;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 992px) {
+	.homeSectionOne {
+        position: relative;
+        margin-top: 0rem;
+    }
+    .content {
+        position: relative;
+        margin-top: -3.5rem;
+        padding: 0.5rem;
+        /* color: black; */
+        text-align: justify;
+
+    }
+    .content p{
+        padding: 0.5rem;
+        font-size: small;
+        /* background: white; */
+    }
+}
+.homeDivOne{
+    width: 100%;
+}
+.homeDivTwo{
+    width: 100%;
+}
+.homeDivThree{
+    width: 100%;
+}
